@@ -12,14 +12,14 @@ request(url, (error, response, html) => {
       if (index > 0) {
         const cells = $(element).find('td');
         const modelNumber = cells.eq(0).text().trim();
-        const cores = cells.eq(1).text().trim();
-        const frequency = cells.eq(2).text().trim();
-        const turbo = cells.eq(3).text().trim();
-        const gpuModel = cells.eq(4).text().trim();
-        const gpuFrequency = cells.eq(5).text().trim();
-        const releaseDate = cells.eq(6).text().trim();
-        const l2Cache = cells.eq(7).text().trim();
-        const l3Cache = cells.eq(8).text().trim();
+        const cores = cells.eq(2).text().trim();
+        const frequency = cells.eq(3).text().trim();
+        const turbo = cells.eq(4).text().trim();
+        const gpuModel = cells.eq(7).text().trim();
+        const gpuFrequency = cells.eq(8).text().trim();
+        const releaseDate = cells.eq(11).text().trim();
+        const l2Cache = cells.eq(5).text().trim();
+        const l3Cache = cells.eq(6).text().trim();
         console.log(`Model Number: ${modelNumber}`);
         console.log(`Cores: ${cores}`);
         console.log(`Frequency: ${frequency}`);
